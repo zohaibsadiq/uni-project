@@ -3,20 +3,18 @@ import logo from "../Assets/logo.png";
 const Header = () => {
   return (
     <header>
-      <nav className="bg-white border-gray-500 ">
+      <nav className="bg-[#EEF4ED] border-gray-500 ">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-3 mx-auto">
           <div>
             <a href="/" className="flex items-center rtl:space-x-reverse">
               <img src={logo} className="mb-3 h-11" alt="Flowbite Logo" />
-              <span className="self-center text-2xl font-semibold text-orange-600 whitespace-nowrap ">
+              <span className="self-center text-2xl font-semibold text-[#FF6B35] whitespace-nowrap ">
                 Services Hub
               </span>
             </a>
           </div>
-          
 
           <div className="flex md:hidden">
-            
             <button
               data-collapse-toggle="navbar-search"
               type="button"
@@ -46,11 +44,11 @@ const Header = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto lg:mr-32 md:mr-16"
             id="navbar-search"
           >
-            <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <a
                   href="#"
-                  className="block px-2 py-2 text-xl text-white bg-orange-600 rounded md:bg-transparent md:text-black md:p-0"
+                  className="block px-2 py-2 text-xl text-black rounded hover:bg-gray-500 md:bg-transparent md:text-black md:p-0"
                   aria-current="page"
                 >
                   Home
@@ -59,7 +57,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-3 py-2 text-lg text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                  className="block px-3 py-2 text-lg text-black rounded hover:bg-gray-500 md:hover:bg-transparent md:p-0"
                 >
                   About US
                 </a>
@@ -67,18 +65,28 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-3 py-2 text-lg text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                  className="block px-3 py-2 text-lg text-black rounded hover:bg-gray-500 md:hover:bg-transparent md:p-0"
                 >
                   Services
                 </a>
               </li>
               <div id="navbar-search" className="md:hidden">
-          <button type="button" class="text-white bg-gradient-to-br from-orange-500 via-orange-500 to-black hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2">Work with us</button>
-          </div>
+                <button
+                  type="button"
+                  class="text-white bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
+                >
+                  Work with us
+                </button>
+              </div>
             </ul>
           </div>
           <div id="navbar-search" className="hidden md:block">
-          <button type="button" class="text-white bg-gradient-to-br from-orange-500 via-orange-500 to-black hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2">Work with us</button>
+            <button
+              type="button"
+              class="text-white bg-gradient-to-br from-orange-500 via-orange-500 to-black  font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
+            >
+              Work with us
+            </button>
           </div>
         </div>
       </nav>

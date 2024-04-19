@@ -1,5 +1,4 @@
 import logo from "../Assets/logo.png";
-
 const Header = () => {
   return (
     <header>
@@ -73,7 +72,7 @@ const Header = () => {
               <div id="navbar-search" className="md:hidden">
                 <button
                   type="button"
-                  class="text-white bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
+                  class="text-[#EEF4ED] bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
                 >
                   Work with us
                 </button>
@@ -83,7 +82,7 @@ const Header = () => {
           <div id="navbar-search" className="hidden md:block">
             <button
               type="button"
-              class="text-white bg-gradient-to-br from-orange-500 via-orange-500 to-black  font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
+              class="text-[#EEF4ED] bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black  font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
             >
               Work with us
             </button>

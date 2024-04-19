@@ -48,7 +48,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-2 py-2 text-xl text-black rounded hover:bg-gray-500 md:bg-transparent md:text-black md:p-0"
+                  className="block px-2 py-2 text-xl text-black rounded md:p-0"
                   aria-current="page"
                 >
                   Home
@@ -57,7 +57,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-3 py-2 text-lg text-black rounded hover:bg-gray-500 md:hover:bg-transparent md:p-0"
+                  className="block px-3 py-2 text-lg text-black rounded md:p-0"
                 >
                   About US
                 </a>
@@ -65,7 +65,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-3 py-2 text-lg text-black rounded hover:bg-gray-500 md:hover:bg-transparent md:p-0"
+                  className="block px-3 py-2 text-lg text-black rounded md:p-0"
                 >
                   Services
                 </a>

@@ -3,10 +3,11 @@ import "../style/style.css";
 const Hero = () => {
   return (
     <div className=" hero">
-      <section className="">
+ <section className="">
         <div className="container flex flex-col items-center px-5 py-2 mx-auto md:flex-row">
           <div className="flex flex-col items-center flex-1 mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
-            <h1 className="mb-4 text-4xl font-semibold text-[#FF6B35] title-font sm:text-5xl ">
+            
+            <h1 className="mb-4 text-2xl xs:text-4xl font-bold sm:font-semibold text-[#FF6B35] title-font sm:text-5xl ">
               Skilled Professional At
               <br className="hidden lg:inline-block" />
               <h1 className="text-[#EEF4ED]">Your Doorstep.</h1>
@@ -21,7 +22,7 @@ const Hero = () => {
               <foam className="flex flex-wrap items-center shadow-2xl">
                 <select
                   id="small"
-                  className="block w-32 h-10 p-2 mb-6 mr-2 text-sm text-[#EEF4ED] bg-gray-900 border bg-opacity-40  focus:ring-orange-500 focus:border-orange-500 "
+                  className="block w-32 h-10 p-2 mb-6 mr-2 text-sm text-[#EEF4ED] bg-gray-900 border bg-opacity-40  focus:ring-[#FF6B35] focus:border-[#FF6B35] rounded-lg"
                 >
                   <option selected>Karachi</option>
                   <option value="US">Lahore</option>
@@ -30,7 +31,7 @@ const Hero = () => {
                   <input
                     type="text"
                     id="search"
-                    className="flex-1 block w-64 h-10 p-2 mb-6 text-sm text-[#EEF4ED] bg-gray-900 bg-opacity-40  focus:ring-orange-500 focus:border-orange-500 "
+                    className="flex-1 block w-64 h-10 p-2 mb-6 text-sm text-[#EEF4ED] bg-gray-900 bg-opacity-40  focus:ring-orange-500 focus:border-orange-500 rounded-lg "
                     placeholder="Search"
                   />
                   <button
@@ -59,19 +60,19 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Rigth side */}
+           {/* Rigth side  */}
           <div className="flex-1 max-w-md p-3 ">
-            <form className="max-w-xs p-6 bg-black rounded-lg bg-opacity-70">
-              <h1 className="mb-2 text-3xl font-bold text-center text-white">
+            <form className="max-w-xs p-6 bg-[#EEF4ED] rounded-lg bg-opacity-30">
+              <h1 className="mb-2 text-3xl font-bold text-center text-black ">
                 Book Your Service
               </h1>
-              <div className="mb-4">
+              <div className="mb-4 0">
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Name"
-                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED] placeholder-black"
                 />
               </div>
               <div className="mb-4">
@@ -80,16 +81,16 @@ const Hero = () => {
                   id="phone-number"
                   name="phone-number"
                   placeholder="Phone Number"
-                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED] placeholder-black"
                 />
               </div>
               <div className="mb-4">
                 <select
                   id="city"
                   name="city"
-                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED]"
                 >
-                  <option value="karachi" className="hover:bg-orange-700">
+                  <option value="karachi" className=" bg-[#EEF4ED]">
                     Karachi
                   </option>
                   <option value="lahore">Lahore</option>
@@ -99,7 +100,7 @@ const Hero = () => {
                 <select
                   id="service"
                   name="service"
-                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm "
+                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED]"
                   placeholder="Service"
                 >
                   <option value="Ac Repair" disabled selected hidden>
@@ -116,13 +117,13 @@ const Hero = () => {
                   id="address"
                   name="address"
                   placeholder="Address"
-                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                  className="w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED] placeholder-black"
                 ></textarea>
               </div>
               <div className="flex justify-end">
                 <button
                   type="submit"
-                  className="w-full px-4 py-2 text-white bg-orange-600 rounded-lg"
+                  className="w-full px-4 py-2 text-white bg-[#FF6B35] rounded-lg text-md font-semibold"
                 >
                   Submit
                 </button>
@@ -130,7 +131,7 @@ const Hero = () => {
             </form>
           </div>
         </div>
-      </section>
+      </section> 
     </div>
   );
 };

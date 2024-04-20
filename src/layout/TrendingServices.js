@@ -26,6 +26,9 @@ const TrendingServices = () => {
           </p>
         </div>
       </div>
+
+{/* ********************************** Right Side ********************************** */}
+
       <div
         id="default-carousel"
         className="relative flex-1 w-full "

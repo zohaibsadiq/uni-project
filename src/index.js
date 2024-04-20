@@ -1,18 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Hero from "./layout/Hero";
+import HowWork from "./layout/HowWork";
 import Navbar from "./layout/Navbar";
 import TopServices from "./layout/TopServices";
-import "./style/index.css";
 import TrendingServices from "./layout/TrendingServices";
+import "./style/index.css";
+
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <TopServices/>
-      <TrendingServices/>
+      <TopServices />
+      <TrendingServices />
+      <HowWork />
     </div>
   );
 };

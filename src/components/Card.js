@@ -3,7 +3,7 @@ const Card = (props) => {
     <div className="w-full max-w-[12rem] sx:max-w-[14rem] bg-[#FF6B35] border border-gray-200 rounded-lg shadow">
       <a href="#">
         <img
-          className="flex justify-center object-contain h-48 p-3 mx-auto rounded-lg"
+          className="flex justify-center object-fill h-48 p-2 mx-auto rounded-lg xs:p-3"
           src={props.image}
           alt="product image"
         />

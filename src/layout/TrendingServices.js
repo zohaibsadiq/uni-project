@@ -63,7 +63,7 @@ const TrendingServices = () => {
                 price="1500"
               />
               <Card
-                name="Ups Installation (With out Wiring) "
+                name="Ups Installation  "
                 image={ups}
                 rate="4.3"
                 price="1000"

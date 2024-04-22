@@ -11,7 +11,7 @@ const TopServices = () => {
     return (
         <section className="text-gray-600 ] pt-6 pb-10  ">
             <div >
-                <h1 className="mb-1 text-2xl font-bold text-center text-black"> Our Top Services</h1>
+                <h1 className="mb-1 text-3xl font-bold text-center text-black"> Our Top Services</h1>
                 <p className="mx-2 mb-5 text-center text-md sm:mx-0">Services Hub provides ultimate installations, repairs, maintenance, and grooming services at your doorstep</p>
             </div>
             <div className="flex flex-wrap justify-center gap-2">

@@ -53,12 +53,12 @@ const Footer = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="#HeroSection">
+                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/#HeroSection">
                   Lahore
                 </a>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black   text-xl" href="#HeroSection">
+                <a className="text-[#EEF4ED] hover:text-black   text-xl" href="/#HeroSection">
                   Karachi
                 </a>
               </li>

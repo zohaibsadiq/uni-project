@@ -1,6 +1,6 @@
-import pic1 from "../Assets/Component_Pics/testominal1.png";
-import pic2 from "../Assets/Component_Pics/testominal2.png";
-import pic3 from "../Assets/Component_Pics/testominal3.png";
+import pic1 from "../../Assets/Component_Pics/testominal1.png";
+import pic2 from "../../Assets/Component_Pics/testominal2.png";
+import pic3 from "../../Assets/Component_Pics/testominal3.png";
 
 const Testimoial = () => {
   return (
@@ -12,7 +12,7 @@ const Testimoial = () => {
             <div className="h-full text-center">
               <img
                 src={pic1}
-                alt="picture"
+                alt="Testimonial1 of client"
                 className="rounded-lg shadow-md shadow-black"
               />
             </div>
@@ -21,7 +21,7 @@ const Testimoial = () => {
             <div className="h-full text-center">
               <img
                 src={pic2}
-                alt="picture"
+                alt="Testimonial of client"
                 className="rounded-lg shadow-md shadow-black"
               />
             </div>
@@ -30,7 +30,7 @@ const Testimoial = () => {
             <div className="h-full text-center">
               <img
                 src={pic3}
-                alt="picture"
+                alt="Testimonial of client"
                 className="rounded-lg shadow-md shadow-black"
               />
             </div>

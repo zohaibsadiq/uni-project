@@ -3,7 +3,7 @@ import { IoMdMan } from "react-icons/io";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoCheckmarkDone } from "react-icons/io5";
 
-import workPic from "../Assets/Component_Pics/howWork.png";
+import workPic from "../../Assets/Component_Pics/howWork.png";
 
 const HowWork = () => {
   return (

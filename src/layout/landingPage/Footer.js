@@ -23,32 +23,32 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full px-4 mt-3 lg:w-1/5 md:w-1/2">
-            <h2 className=" mt-3 md:mt-0 mb-3 text-2xl font-bold tracking-widest text-[#EEF4ED] title-font">
+            <h2 className=" mt-3 md:mt-0 mb-3 text-2xl font-semibold tracking-widest text-[#EEF4ED] title-font">
               Main Menu
             </h2>
             <nav className="mb-10 list-none">
               <li>
-                <a className="text-[#EEF4ED] hover:text-black text-xl">Home</a>
+                <a className="text-[#EEF4ED] hover:text-black text-xl" href="/">Home</a>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl">
+                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/aboutUS">
                   About Us
                 </a>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl">
+                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/contactUs">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl">
+                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/Services">
                   Services
                 </a>
               </li>
             </nav>
           </div>
           <div className="w-full px-4 mt-3 lg:w-1/5 md:w-1/2">
-            <h2 className="mb-3 text-2xl font-bold tracking-widest text-[#EEF4ED] title-font">
+            <h2 className="mb-3 text-2xl font-semibold tracking-widest text-[#EEF4ED] title-font">
               Available In
             </h2>
             <nav className="mb-10 list-none">
@@ -65,7 +65,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="w-full px-4 mt-3 lg:w-1/5 md:w-1/2">
-            <h2 className="mb-3 text-2xl font-bold tracking-widest text-[#EEF4ED] title-font">
+            <h2 className="mb-3 text-2xl font-semibold tracking-widest text-[#EEF4ED] title-font">
               Services
             </h2>
             <nav className="mb-10 list-none">

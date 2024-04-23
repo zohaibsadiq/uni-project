@@ -1,4 +1,4 @@
-import logo from "../Assets/logo.png";
+import logo from "../../Assets/logo.png";
 const Header = () => {
   return (
     <header>
@@ -46,7 +46,7 @@ const Header = () => {
             <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="block px-2 py-2 text-xl text-black rounded md:p-0 hover:text-[#FF6B35] "
                   aria-current="page"
                 >
@@ -55,7 +55,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/aboutUs"
                   className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
                 >
                   About US

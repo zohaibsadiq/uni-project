@@ -1,30 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Hero from "./layout/Hero";
-import HowWork from "./layout/HowWork";
-import Navbar from "./layout/Navbar";
-import TopServices from "./layout/TopServices";
-import TrendingServices from "./layout/TrendingServices";
+import { BrowserRouter, Routes,Route } from "react-router-dom";
+import AboutUs from "./layout/routes/aboutUs";
+import Home from "./layout/routes/home"; // Fix the casing of the file name
 import "./style/index.css";
-import WhyChoose from "./layout/WhyChoose";
-import Testimoial from "./layout/Testimoial";
-import Complain from "./layout/Complain";
-import Footer from "./layout/Footer";
-
+// import AboutUs from "./layout/routes/aboutUs";
+import Navbar from "./layout/landingPage/Navbar"
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <TopServices />
-      <TrendingServices />
-      <HowWork />
-      <WhyChoose/>
-      <Testimoial/> 
-       <Complain/>
-       <Footer/>
-    </div>
+    <BrowserRouter>
+      <div>
+       {/* <Navbar/> */}
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/aboutUs" Component={AboutUs} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 };
 

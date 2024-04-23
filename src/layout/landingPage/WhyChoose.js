@@ -1,7 +1,7 @@
-import clock from "../Assets/Component_Pics/Choose/clock.png";
-import shakehand from "../Assets/Component_Pics/Choose/hand.png";
-import secure from "../Assets/Component_Pics/Choose/secure.png";
-import wallet from "../Assets/Component_Pics/Choose/wallet.png";
+import clock from "../../Assets/Component_Pics/Choose/clock.png";
+import shakehand from "../../Assets/Component_Pics/Choose/hand.png";
+import secure from "../../Assets/Component_Pics/Choose/secure.png";
+import wallet from "../../Assets/Component_Pics/Choose/wallet.png";
 const WhyChoose = () => {
   return (
     <section className=" text gray-600 body-font bg-[#EEF4ED] bg-opacity-80  " >

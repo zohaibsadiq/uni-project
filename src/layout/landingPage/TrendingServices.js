@@ -1,11 +1,11 @@
-import Ac from "../Assets/Component_Pics/Trending/Ac.png";
-import Wiring from "../Assets/Component_Pics/Trending/Wiring.png";
-import acService from "../Assets/Component_Pics/Trending/acService.png";
-import lock from "../Assets/Component_Pics/Trending/lock.png";
-import machine from "../Assets/Component_Pics/Trending/machine.png";
-import shower from "../Assets/Component_Pics/Trending/shower.png";
-import ups from "../Assets/Component_Pics/Trending/ups.jpg";
-import Card from "../components/Card";
+import Card from "../../components/Card";
+import Ac from "../../Assets/Component_Pics/Trending/Ac.png";
+import Wiring from "../../Assets/Component_Pics/Trending/Wiring.png";
+import acService from "../../Assets/Component_Pics/Trending/acService.png";
+import lock from "../../Assets/Component_Pics/Trending/lock.png";
+import machine from "../../Assets/Component_Pics/Trending/machine.png";
+import shower from "../../Assets/Component_Pics/Trending/shower.png";
+import ups from "../../Assets/Component_Pics/Trending/ups.jpg";
 
 const TrendingServices = () => {
   return (
@@ -27,7 +27,7 @@ const TrendingServices = () => {
         </div>
       </div>
 
-{/* ********************************** Right Side ********************************** */}
+      {/* ********************************** Right Side ********************************** */}
 
       <div
         id="default-carousel"

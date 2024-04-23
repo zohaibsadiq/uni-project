@@ -1,5 +1,5 @@
 import { IoMdCall } from "react-icons/io";
-import "../style/style.css";
+import "../../style/style.css";
 
 const Hero = () => {
   return (

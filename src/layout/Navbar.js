@@ -47,7 +47,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-2 py-2 text-xl text-black rounded md:p-0"
+                  className="block px-2 py-2 text-xl text-black rounded md:p-0 hover:text-[#FF6B35] "
                   aria-current="page"
                 >
                   Home
@@ -56,7 +56,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-3 py-2 text-lg text-black rounded md:p-0"
+                  className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
                 >
                   About US
                 </a>
@@ -64,7 +64,15 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block px-3 py-2 text-lg text-black rounded md:p-0"
+                  className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
+                >
+                  Contact US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Services"
+                  className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
                 >
                   Services
                 </a>
@@ -72,7 +80,7 @@ const Header = () => {
               <div id="navbar-search" className="md:hidden">
                 <button
                   type="button"
-                  class="text-[#EEF4ED] bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
+                  class="text-[#EEF4ED] bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2 hover:"
                 >
                   Work with us
                 </button>
@@ -82,7 +90,7 @@ const Header = () => {
           <div id="navbar-search" className="hidden md:block">
             <button
               type="button"
-              class="text-[#EEF4ED] bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black  font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2"
+              class="text-[#EEF4ED] bg-gradient-to-br from-[#FF6B35] via-[#FF6B35] to-black  font-medium rounded-lg text-md  px-5 py-2.5 text-center me-2 mb-2 hover:bg-white"
             >
               Work with us
             </button>

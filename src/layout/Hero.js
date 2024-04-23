@@ -3,7 +3,7 @@ import "../style/style.css";
 
 const Hero = () => {
   return (
-    <div className=" hero" loading="lazy">
+    <div className=" hero" loading="lazy" id="HeroSection">
       <section className="">
         <div className="container flex flex-col items-center px-5 py-2 mx-auto md:flex-row">
           <div className="flex flex-col items-center flex-1 mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
@@ -23,8 +23,9 @@ const Hero = () => {
                 <select
                   id="small"
                   className="block w-32 h-10 p-2 mb-6 mr-2 text-sm text-[#EEF4ED] bg-gray-900 border bg-opacity-40  focus:ring-[#FF6B35] focus:border-[#FF6B35] rounded-lg"
+                  
                 >
-                  <option selected>Karachi</option>
+                  <option selected >Karachi</option>
                   <option value="US">Lahore</option>
                 </select>
                 <div className="flex">

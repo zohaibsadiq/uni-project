@@ -9,6 +9,7 @@ import "./style/index.css";
 import WhyChoose from "./layout/WhyChoose";
 import Testimoial from "./layout/Testimoial";
 import Complain from "./layout/Complain";
+import Footer from "./layout/Footer";
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       <WhyChoose/>
       <Testimoial/> 
        <Complain/>
+       <Footer/>
     </div>
   );
 };

@@ -1,5 +1,9 @@
 import logo from "../../Assets/logo.png";
-const Header = () => {
+import {Link} from "react-router-dom";
+
+
+
+const Navbar = () => {
   return (
     <header>
       <nav className="bg-[#EEF4ED] border-gray-500 ">
@@ -45,37 +49,37 @@ const Header = () => {
           >
             <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="block px-2 py-2 text-xl text-black rounded md:p-0 hover:text-[#FF6B35] "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/aboutUs"
+                <Link
+                  to="/aboutUs"
                   className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
                 >
                   About US
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="contactUs"
+                <Link
+                  to="/contactUs"
                   className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
                 >
                   Contact US
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#Services"
+                <Link
+                  to="/#Services"
                   className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <div id="navbar-search" className="md:hidden">
                 <button
@@ -101,4 +105,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

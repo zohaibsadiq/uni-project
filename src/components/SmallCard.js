@@ -1,20 +1,22 @@
+import { Link } from "react-router-dom";
+
 
 const SmallCard = (props) => {
   return (
     <div className="w-full max-w-[10rem]  border rounded-lg shadow-sm ">
-      <a href={`/${props.route}`}>
+      <Link to={`/${props.route}`}>
         <img
           className="h-24 p-4 mx-auto rounded-t-lg"
           src={props.image}
           alt="product image"
         />
-      </a>
+      </Link>
       <div className="px-3 pb-4">
-        <a href={`/${props.route}`}>    
+        <Link to={`${props.route}`}>    
           <h5 className="text-lg font-semibold tracking-tight text-center text-gray-900">
             {props.name}
           </h5>
-        </a>
+        </Link>
       </div>
     </div>
   );

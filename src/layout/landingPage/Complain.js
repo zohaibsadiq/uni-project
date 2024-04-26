@@ -1,3 +1,5 @@
+import Link from "react-router-dom";
+
 const Complaint = () => {
   return (
     <section className="text-gray-600 body-font bg-[#EEF4ED] ">

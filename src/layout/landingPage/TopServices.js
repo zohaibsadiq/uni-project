@@ -1,4 +1,3 @@
-import SmallCard from "../../components/SmallCard";
 import carpanterPic from "../../Assets/Component_Pics/carpanterPic.png";
 import cctvPic from "../../Assets/Component_Pics/cctvPic.png";
 import cleaningPic from "../../Assets/Component_Pics/cleaningPic.png";
@@ -6,6 +5,7 @@ import electricPic from "../../Assets/Component_Pics/electricPic.png";
 import pestPic from "../../Assets/Component_Pics/pestPic.png";
 import plumbingPic from "../../Assets/Component_Pics/plumbingPic.png";
 import repairPic from "../../Assets/Component_Pics/repairPic.png";
+import SmallCard from "../../components/SmallCard";
 
 const TopServices = () => {
   return (
@@ -24,14 +24,38 @@ const TopServices = () => {
         <SmallCard
           name={"Home Appliance Repair"}
           image={repairPic}
-          route={"repair"}
+          route={"services/applianceRepair"}
         />
-        <SmallCard name={"Cleaning Services"} image={cleaningPic} />
-        <SmallCard name={"Electrical Services"} image={electricPic} />
-        <SmallCard name={"CCTV Services"} image={cctvPic} />
-        <SmallCard name={"Plumbing Services"} image={plumbingPic} />
-        <SmallCard name={"Pest Control Services"} image={pestPic} />
-        <SmallCard name={"Carpenter Services"} image={carpanterPic} />
+        <SmallCard
+          name={"Cleaning Services"}
+          image={cleaningPic}
+          route={"services/cleaningServices"}
+        />
+        <SmallCard
+          name={"Electrical Services"}
+          image={electricPic}
+          route={"services/electricalServices"}
+        />
+        <SmallCard
+          name={"CCTV Services"}
+          image={cctvPic}
+          route={"services/cctvServices"}
+        />
+        <SmallCard
+          name={"Plumbing Services"}
+          image={plumbingPic}
+          route={"services/plumbingServices"}
+        />
+        <SmallCard
+          name={"Pest Control Services"}
+          image={pestPic}
+          route={"services/pestControl"}
+        />
+        <SmallCard
+          name={"Carpenter Services"}
+          image={carpanterPic}
+          route={"services/carpenterServices"}
+        />
       </div>
     </section>
   );

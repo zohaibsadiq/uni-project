@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom";
+
+
 const Footer = () => {
   return (
     <footer className=" text-gray-600 body-font bg-[#FF6B35]">
@@ -5,11 +8,11 @@ const Footer = () => {
         <div className="flex flex-wrap order-first text-center md:text-left">
           <div className="w-full px-4 lg:w-1/3 md:w-1/2">
             <div className="flex justify-center md:justify-start">
-              <a href="/" className="flex items-center text-center rtl:space-x-reverse">
+              <Link to="/" className="flex items-center text-center rtl:space-x-reverse">
                 <p className="text-center text-4xl font-semibold text-[#EEF4ED] whitespace-nowrap ">
                   Services Hub
                 </p>
-              </a>
+              </Link>
             </div>
 
             <div className="flex flex-wrap items-end justify-center xl:flex-nowrap md:flex-nowrap lg:flex-wrap md:justify-start">
@@ -28,22 +31,22 @@ const Footer = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li>
-                <a className="text-[#EEF4ED] hover:text-black text-xl" href="/">Home</a>
+                <Link className="text-[#EEF4ED] hover:text-black text-xl" to="/">Home</Link>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/aboutUS">
+                <Link className="text-[#EEF4ED] hover:text-black  text-xl" to="/aboutUS">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/contactUs">
+                <Link className="text-[#EEF4ED] hover:text-black  text-xl" to="/contactUs">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/Services">
+                <Link className="text-[#EEF4ED] hover:text-black  text-xl" to="/#Services">
                   Services
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -53,14 +56,14 @@ const Footer = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li>
-                <a className="text-[#EEF4ED] hover:text-black  text-xl" href="/#HeroSection">
+                <Link className="text-[#EEF4ED] hover:text-black  text-xl" to="/#HeroSection">
                   Lahore
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-[#EEF4ED] hover:text-black   text-xl" href="/#HeroSection">
+                <Link className="text-[#EEF4ED] hover:text-black   text-xl" to="/#HeroSection">
                   Karachi
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -70,29 +73,29 @@ const Footer = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li>
-                <a className="text-xl text-[#EEF4ED] hover:text-black ">
+                <Link className="text-xl text-[#EEF4ED] hover:text-black " to={""}>
                   Home Appliance Repair
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-xl text-[#EEF4ED] hover:text-black ">
+                <Link className="text-xl text-[#EEF4ED] hover:text-black " to={""}>
                   Cleaning Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-xl text-[#EEF4ED] hover:text-black ">
+                <Link className="text-xl text-[#EEF4ED] hover:text-black " to={""}>
                   Electrical Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-xl text-[#EEF4ED] hover:text-black ">
+                <Link className="text-xl text-[#EEF4ED] hover:text-black " to={""}>
                   CCTV Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-xl text-[#EEF4ED] hover:text-black ">
+                <Link className="text-xl text-[#EEF4ED] hover:text-black "to={""}>
                   Plumbing Services
-                </a>
+                </Link >
               </li>
             </nav>
           </div>

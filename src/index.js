@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUs from "./layout/routes/aboutUs";
+import ConfirmOrder from "./layout/routes/confirmOrder";
 import contactUs from "./layout/routes/contactUs";
 import Home from "./layout/routes/home";
 import Service from "./layout/routes/services";
@@ -16,10 +17,10 @@ const App = () => {
           <Route path="/aboutUs" Component={AboutUs} />
           <Route path="/contactUs" Component={contactUs} />
           <Route path="/services/:id" Component={Service} />
+          <Route path="/service/:id" Component={ConfirmOrder} />
         </Routes>
-       
       </div>
-     </BrowserRouter>
+    </BrowserRouter>
   );
 };
 

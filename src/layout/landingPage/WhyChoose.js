@@ -4,7 +4,7 @@ import secure from "../../Assets/Component_Pics/Choose/secure.png";
 import wallet from "../../Assets/Component_Pics/Choose/wallet.png";
 const WhyChoose = () => {
   return (
-    <section className=" text gray-600 body-font bg-[#EEF4ED] bg-opacity-80  " >
+    <section className=" text gray-600 body-font bg-[#EEF4ED] bg-opacity-80  " id="WhyChoose" >
       <div className="container px-5 py-5 mx-auto">
         <div className="flex flex-col w-full mb-12 text-center">
           <h1 className="mb-4 text-3xl font-bold text-black sm:text-4xl title-font">

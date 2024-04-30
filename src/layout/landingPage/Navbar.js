@@ -1,7 +1,5 @@
+import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
-import {Link} from "react-router-dom";
-
-
 
 const Navbar = () => {
   return (
@@ -9,12 +7,12 @@ const Navbar = () => {
       <nav className="bg-[#EEF4ED] border-gray-500 ">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-3 mx-auto">
           <div>
-            <a href="/" className="flex items-center rtl:space-x-reverse">
+            <Link to="/" className="flex items-center rtl:space-x-reverse">
               <img src={logo} className="mb-3 h-11" alt="Flowbite Logo" />
               <span className="self-center text-2xl font-semibold text-[#FF6B35] whitespace-nowrap ">
                 Services Hub
               </span>
-            </a>
+            </Link>
           </div>
 
           <div className="flex md:hidden">

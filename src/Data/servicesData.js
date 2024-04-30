@@ -22,7 +22,7 @@ export const cleaningServices = [
     img: { bathCleaning },
     discreption:
       "Refresh and sanitize your bathroom with our meticulous cleaning. We tackle soap scum, grout, counter...",
-      bookUrl:"service/bathCleaning",
+    bookUrl: "service/bathCleaning",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const cleaningServices = [
     img: { carpetCleaning },
     discreption:
       "Transform your carpets from dull to dazzling with our expert carpet cleaning. Our advanced technique...",
-      bookUrl:"service/carpetCleaning",
+    bookUrl: "service/carpetCleaning",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const cleaningServices = [
     img: { glassCleaning },
     discreption:
       "Let your surroundings shine with our expert glass cleaning. Whether it is mirrors, glass partitions,...",
-      bookUrl:"service/glassCleaning",
+    bookUrl: "service/glassCleaning",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const cleaningServices = [
     img: { matressCleaning },
     discreption:
       "Enjoy a restful sleep on a clean and sanitized mattress. Our mattress cleaning service eliminates du...",
-      bookUrl:"service/matressCleaning",
+    bookUrl: "service/matressCleaning",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const cleaningServices = [
     img: { KitchenCleaning },
     discreption:
       "Experience the joy of cooking in a spotless kitchen. Our kitchen cleaning service tackles grease, gr...",
-      bookUrl:"service/kitchenCleaning",
+    bookUrl: "service/kitchenCleaning",
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ export const cleaningServices = [
     img: { sofaCleaning },
     discreption:
       "Restore the comfort and charm of your furniture with our professional sofa cleaning service with our...",
-      bookUrl:"service/sofaCleaning",
+    bookUrl: "service/sofaCleaning",
   },
 ];
 
@@ -73,7 +73,7 @@ export const applianceRepair = [
     img: { acInstall },
     discreption:
       "Stay cool and comfortable with our expert AC repair service. Our technicians are trained to repair a...",
-      bookUrl:"service/acInstall",
+    bookUrl: "service/acInstall",
   },
   {
     id: 2,
@@ -81,7 +81,7 @@ export const applianceRepair = [
     img: { washingMachine },
     discreption:
       "Are appliance troubles disrupting your life? Like washing machines? Show your appliances some care ",
-      bookUrl:"service/washingMachine",
+    bookUrl: "service/washingMachine",
   },
   {
     id: 3,
@@ -89,7 +89,7 @@ export const applianceRepair = [
     img: { ovenRepair },
     discreption:
       "Enjoy hot and delicious meals with our expert microwave repair service. Our technicians are trained...",
-      bookUrl:"service/ovenRepair",
+    bookUrl: "service/ovenRepair",
   },
 ];
 
@@ -100,8 +100,7 @@ export const electricalServices = [
     img: { electricianService },
     discreption:
       "Experience quick, safe, and affordable service booking for all your home repair needs. Whether it's...",
-      bookUrl:"service/electricianService",
-  
+    bookUrl: "service/electricianService",
   },
   {
     id: 2,
@@ -109,9 +108,8 @@ export const electricalServices = [
     img: { upsInstall },
     discreption:
       "Keep your home and business safe with our expert UPS installation service. Our technicians are trained...",
-      bookUrl:"service/upsInstall",
+    bookUrl: "service/upsInstall",
   },
-
 ];
 
 export const cctvServices = [
@@ -121,7 +119,7 @@ export const cctvServices = [
     img: { cctvInstall },
     discreption:
       "Keep your home and business safe with our expert CCTV installation service. Our technicians are...",
-      bookUrl:"service/cctvInstall",
+    bookUrl: "service/cctvInstall",
   },
 ];
 
@@ -132,7 +130,7 @@ export const plumbingServices = [
     img: { plumberService },
     discreption:
       "Experience quick, safe, and affordable service booking for all your home repair needs. Whether it's...",
-      bookUrl:"service/plumberService",
+    bookUrl: "service/plumberService",
   },
   {
     id: 2,
@@ -140,7 +138,7 @@ export const plumbingServices = [
     img: { gizerInstall },
     discreption:
       "Enjoy hot water whenever you need it with our expert geyser installation service. Our technicians...",
-      bookUrl:"service/gizerInstall",
+    bookUrl: "service/gizerInstall",
   },
 ];
 
@@ -151,7 +149,7 @@ export const pestControl = [
     img: { pestControls },
     discreption:
       "Experience quick, safe, and affordable service booking for all your home repair needs. Whether it's...",
-      bookUrl:"service/pestControls",
+    bookUrl: "service/pestControls",
   },
 ];
 
@@ -162,6 +160,6 @@ export const carpenterServices = [
     img: { carpenterServies },
     discreption:
       "Experience quick, safe, and affordable service booking for all your home repair needs. Whether it's...",
-      bookUrl:"service/carpenterServies",
+    bookUrl: "service/carpenterServies",
   },
 ];

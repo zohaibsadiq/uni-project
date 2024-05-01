@@ -7,6 +7,7 @@ import contactUs from "./layout/routes/contactUs";
 import Home from "./layout/routes/home";
 import Service from "./layout/routes/services";
 import "./style/index.css";
+import BookingList from "./layout/routes/BookingList";
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
           <Route path="/contactUs" Component={contactUs} />
           <Route path="/services/:id" Component={Service} />
           <Route path="/service/:id" Component={ConfirmOrder} />
+          <Route path="/BookingList" Component={BookingList} />
+
         </Routes>
       </div>
     </BrowserRouter>

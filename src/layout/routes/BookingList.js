@@ -1,54 +1,83 @@
-
-import React, { useEffect, useState } from "react"; // Import necessary hooks
-import { IoMdRefresh } from "react-icons/io"; // Import a refresh icon for manual reload
+import React, { useEffect, useState } from "react";
+import { IoMdRefresh } from "react-icons/io";
 
 const BookingList = () => {
-  const [bookings, setBookings] = useState([]); // State to hold fetched data
-  const [isLoading, setIsLoading] = useState(true); // Loading state
-  const [error, setError] = useState(null); // Error state
+  const [bookings, setBookings] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/bookings"); // Fetch data from the backend
+      const response = await fetch("http://localhost:5000/api/bookings");
       if (response.ok) {
-        const data = await response.json(); // Parse JSON data
-        setBookings(data); // Update state with fetched data
-        setIsLoading(false); // Update loading state
+        const data = await response.json();
+        setBookings(data);
+        setIsLoading(false);
       } else {
-        throw new Error("Failed to fetch data"); // Handle non-200 responses
+        throw new Error("Failed to fetch data");
       }
     } catch (error) {
-      setError(error.message); // Set the error state
-      setIsLoading(false); // Update loading state
+      setError(error.message);
+      setIsLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchData(); // Fetch data when component is mounted
-  }, []); // Empty dependency array ensures it runs only once on component mount
+    fetchData();
+  }, []);
 
   if (isLoading) {
-    return <div>Loading...</div>; // Show a loading message while fetching data
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <span className="text-lg font-semibold">Loading...</span>
+      </div>
+    );
   }
 
   if (error) {
-    return <div>Error: {error}</div>; // Show an error message if there's an error
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <span className="text-lg font-semibold text-red-600">
+          Error: {error}
+        </span>
+      </div>
+    );
   }
 
   return (
-    <div>
-      <h2>Bookings List</h2>
-      <button onClick={fetchData} title="Refresh">
-        <IoMdRefresh /> {/* Refresh button for manual data reload */}
-      </button>
-      <ul>
+    <div className="p-6">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-2xl font-bold">Bookings List</h2>
+        <button
+          onClick={fetchData}
+          title="Refresh"
+          className="p-2 text-gray-800 bg-gray-200 rounded hover:bg-gray-300"
+        >
+          <IoMdRefresh />
+        </button>
+      </div>
+
+      <ul className="space-y-4">
         {bookings.map((booking) => (
-          <li key={booking._id}>
-            <strong>Name:</strong> {booking.name} <br />
-            <strong>Phone Number:</strong> {booking.phoneNumber} <br />
-            <strong>City:</strong> {booking.city} <br />
-            <strong>Service:</strong> {booking.service} <br />
-            <strong>Address:</strong> {booking.address}
+          <li
+            key={booking._id}
+            className="p-4 bg-white border rounded-lg shadow-sm"
+          >
+            <p>
+              <strong>Name:</strong> {booking.name}
+            </p>
+            <p>
+              <strong>Phone Number:</strong> {booking.phoneNumber}
+            </p>
+            <p>
+              <strong>City:</strong> {booking.city}
+            </p>
+            <p>
+              <strong>Service:</strong> {booking.service}
+            </p>
+            <p>
+              <strong>Address:</strong> {booking.address}
+            </p>
           </li>
         ))}
       </ul>
@@ -56,4 +85,4 @@ const BookingList = () => {
   );
 };
 
-export default BookingList; // Export the component
+export default BookingList;

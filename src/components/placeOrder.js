@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import { IoMdCall } from "react-icons/io"; // Import react-icons for additional UI elements
 import { useLocation, useNavigate } from "react-router-dom";
 import numberPic from "../Assets/number.png"; // Import your assets
-import { useState } from "react"; // Import the useState hook
 import {
   applianceRepair,
   carpenterServices,
@@ -13,18 +12,31 @@ import {
   plumbingServices,
 } from "../Data/singleServiceData"; // Importing all services data
 
-const BookingForm = () => {
+const BookingForm = (props) => {
+  const { services } = props; // Destructure the services from props
+
   const navigate = useNavigate(); // Initialize useNavigate
+
+  // Set initial formData with the service coming from props
   const [formData, setFormData] = useState({
     name: "",
     phoneNumber: "",
     city: "Karachi",
-    service: "bathing",
+    service: services || "", // Default to an empty string if not provided
     address: "",
   });
 
+  // Update formData if the service in props changes
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      service: services, // Update service to the new props value
+    }));
+  }, [services]); // Dependency on the services prop
+
   const handleChange = (e) => {
     const { name, value } = e.target; // Get the name and value from the input
+
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -44,12 +56,16 @@ const BookingForm = () => {
 
       if (response.ok) {
         alert("Booking created successfully!");
+
+        // Reset the form, but retain the service
         setFormData({
           name: "",
           phoneNumber: "",
-          city: "Karachi", // Reset to default city
+          city: "Karachi",
+          service: services, // Keep the same service
           address: "",
-        }); // Reset the form
+        });
+
         setTimeout(() => {
           navigate("/BookingList"); // Navigate to another route after 2 seconds
         }, 2000);
@@ -71,6 +87,7 @@ const BookingForm = () => {
         <h1 className="mb-2 text-3xl font-bold text-center text-black">
           Please Fill The Form Below
         </h1>
+
         <div className="mb-2">
           <input
             type="text"
@@ -79,9 +96,10 @@ const BookingForm = () => {
             placeholder="Name"
             value={formData.name} // Bind state to the input field
             onChange={handleChange} // Handle input changes
-            className="w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED] placeholder-black"
+            className="w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35]"
           />
         </div>
+
         <div className="mb-2">
           <input
             type="tel"
@@ -93,6 +111,7 @@ const BookingForm = () => {
             className="w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED] placeholder-black"
           />
         </div>
+
         <div className="mb-2">
           <select
             id="city"
@@ -105,6 +124,7 @@ const BookingForm = () => {
             <option value="Lahore">Lahore</option>
           </select>
         </div>
+
         <div className="mb-2">
           <textarea
             id="address"
@@ -115,6 +135,7 @@ const BookingForm = () => {
             className="w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-[#FF6B35] focus:border-[#FF6B35] sm:text-sm bg-[#EEF4ED] placeholder-black"
           />
         </div>
+
         <div className="flex justify-end gap-2">
           <button
             type="submit"
@@ -154,7 +175,7 @@ const PlaceOrderComponent = ({ service }) => (
         />
       </div>
       <div>
-        <BookingForm />
+        <BookingForm services={service.title} />
         <h2 className="mt-10 text-xl font-bold text-center">
           Please explain your problem (optional)
         </h2>

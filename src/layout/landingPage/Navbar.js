@@ -72,12 +72,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/#Services"
+                <a
+                  href="/#Services"
                   className="block px-3 py-2 text-lg text-black rounded md:p-0 hover:text-[#FF6B35]"
                 >
                   Services
-                </Link>
+                </a>
               </li>
               <div id="navbar-search" className="md:hidden">
                 <button
